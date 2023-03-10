@@ -11,7 +11,7 @@ import SwiftUI
 struct dokbeaApp: App {
     var body: some Scene {
         WindowGroup {
-            LoanCalculator()
+            MainLoan()
         }
     }
 }
