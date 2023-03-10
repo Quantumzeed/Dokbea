@@ -85,7 +85,7 @@ struct MainLoan: View {
         let n = (Int(loanTerm) ?? 0)
         let numerator = r * pow((1 + r), Double(n))
         let denominator = pow((1 + r), Double(n)) - 1
-        let result = (Double(principal) ?? 0) * numerator / denominator
+        let result = round((Double(principal) ?? 0) * numerator / denominator)
         if result >= 1 {
             monthlyPayment = String(result)
         }
@@ -108,6 +108,7 @@ struct MainLoan: View {
 struct CustomTextFieldStyle: TextFieldStyle {
     func _body(configuration: TextField<Self._Label>) -> some View {
         configuration
+            .keyboardType(.numberPad)
             .foregroundColor(.green)
             .font(.title3)
             .padding()
