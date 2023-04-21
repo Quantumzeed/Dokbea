@@ -3,7 +3,7 @@
 //  dokbea
 //
 //  Created by Quantum on 9/3/2566 BE.
-//
+//  test Commit with XCODE
 
 import SwiftUI
 
@@ -111,7 +111,6 @@ struct LoanCalculator: View {
                                 }
                             }
                     }
-                    
                     if !vm.totalInterest.isEmpty {
                         Section("รวมดอกเบี้ยทั้งหมด") {
                             Text(vm.totalInterest)
