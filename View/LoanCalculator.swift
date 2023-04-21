@@ -111,6 +111,7 @@ struct LoanCalculator: View {
                                 }
                             }
                     }
+                    
                     if !vm.totalInterest.isEmpty {
                         Section("รวมดอกเบี้ยทั้งหมด") {
                             Text(vm.totalInterest)
